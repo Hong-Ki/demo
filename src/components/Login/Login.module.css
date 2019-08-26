@@ -1,0 +1,17 @@
+.wrapper {
+  flex-grow: 1;
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-end;
+
+  font-size: 20px;
+
+  text-transform: uppercase;
+}
+
+.wrapper > span {
+  cursor: pointer;
+}

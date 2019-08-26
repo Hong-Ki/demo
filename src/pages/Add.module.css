@@ -1,0 +1,36 @@
+@keyframes blur {
+  to {
+    opacity: 1;
+    filter: blur(0px);
+  }
+}
+
+.wrapper {
+  width: 50vw;
+  height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+
+  font-size: 50px;
+}
+
+.wrapper > span {
+  filter: blur(50px);
+  opacity: 0.5;
+  animation: blur 1s forwards;
+}
+
+.wrapper > span:nth-child(1) {
+  animation-delay: 1s;
+}
+.wrapper > span:nth-child(2) {
+  animation-delay: 1.3s;
+}
+.wrapper > span:nth-child(3) {
+  animation-delay: 1.6s;
+}
